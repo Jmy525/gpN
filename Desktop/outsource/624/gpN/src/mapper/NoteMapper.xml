@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.jmy.web.dao.NoteDao">
+    
+    <select id="findAllNote" 
+        resultType="com.jmy.web.entity.Note"
+        >
+        select * from notes where userid=#{userid}
+    </select>
+    <insert id="addNote"
+        >
+        insert into notes(userid,english)values(#{userid},#{english})
+    </insert>
+    <delete id="deleteNote"
+        >
+        delete from notes where id=#{noteid}
+    </delete>
+    <select id="findNoteByEnglish" 
+        resultType="com.jmy.web.entity.Note"
+        >
+        select * from notes where english=#{english} AND userid=#{userid}
+    </select>
+</mapper>
