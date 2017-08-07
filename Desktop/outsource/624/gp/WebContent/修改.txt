@@ -1,0 +1,14 @@
+1.创建了queryMessage.jsp页面
+2.添加了jstl.jar和standard.jar
+3.添加了My97DatePicker插件
+4.添加了css和js文件夹
+5.创建pageMessage.java
+
+--------------------------上面已提交到服务器上---------------------
+
+1.添加 css/login/style.css
+2.添加 js/placeholder.js
+3.web.xml创建servlet
+4.创建 BackLoginServlet.java
+5.创建了login_.jsp
+6.修改了QueryMessageservlet.java

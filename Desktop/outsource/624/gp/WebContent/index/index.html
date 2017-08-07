@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"  />
+		<title></title>
+		 <script type="application/x-javascript">
+            if (navigator.userAgent.indexOf('iPhone') != -1) {
+				addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+            }, false); 
+            }
+
+            function hideURLbar() {
+				window.scrollTo(0, 1);
+            }
+            
+             var handlerOrientationChange = function(){
+			        var width = (window.innerWidth <= 320) ? 320 : ((window.innerWidth >= 640) ? 640 : window.innerWidth);
+			       var fontSize = 100 * (width / 320);
+			        document.documentElement.style.fontSize = fontSize + "px";
+			    	};
+				    window.onresize = handlerOrientationChange;
+				    setTimeout(function(){
+				        handlerOrientationChange();
+			},0);
+        </script>
+        
+        <style type="text/css">
+*{margin: 0; padding: 0}
+html{background: #fff;font-size: 100px;}   
+/* 禁用iPhone中Safari的字号自动调整 */
+html {-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,hr {margin:0;padding:0;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+/*
+	 font-family:"Helvetica Neue", Helvetica, "Microsoft YaHei", STHeiTi, Arial, sans-serif;
+	 */
+body{
+	max-width:640px;min-width:320px;
+     font-size: 0.16rem;
+     margin: 0 auto;
+     text-rendering: optimizeLegibility;
+     color:#333;
+     font-family:"Microsoft YaHei", STHeiTi, Arial, sans-serif;height:100%;line-height:1;overflow-x:hidden;-webkit-overflow-scrolling:touch;margin:0 auto;}
+
+/*html5新标签*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display:block;margin:0;padding:0;}
+audio,canvas,progress,video {display:inline-block;vertical-align:baseline;}
+a{color:#666;background:transparent;text-decoration:none;
+  -webkit-tap-highlight-color:transparent;/*设置的tap A标签的时候出现的黑色高亮*/}
+a:active{outline:0;background:none;}
+:focus{
+	outline:none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	tap-highlight-color: rgba(0, 0, 0, 0)
+}
+b,strong {	font-weight:bold;}
+em,i,var{font-style:normal;}
+/* 图片自适应 */
+img {max-width:100%;height:auto;
+	width:auto\9;/* ie8 */
+	-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+	vertical-align:top;
+}
+hr {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:content-box;
+	border:none;
+	height:0;
+}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0px; padding: 0px;}
+
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+button {overflow:visible;}
+button,select {text-transform:none;}
+button,
+html input[type="button"],input[type="reset"],input[type="submit"] {
+	-webkit-appearance:button;
+	cursor:pointer;
+	border:none;
+	background:transparent;
+}
+button[disabled],html input[disabled] {
+	cursor:default;}
+input {line-height:normal;}
+input[type="checkbox"],input[type="radio"] {box-sizing:border-box;padding:0;}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {height:auto;-webkit-appearance: none !important;}
+input[type="search"] {-webkit-appearance:textfield;-webkit-box-sizing:border-box;box-sizing:border-box;}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {-webkit-appearance:none;}
+textarea {overflow:auto;resize:vertical;}
+table {border-collapse:collapse;border-spacing:0;}
+ul,ol {list-style:none outside none;}
+h1,h2,h3,h4,h5,
+h6{font-weight:normal;font-size:100%;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color:#ccc;}
+/*清除浮动*/
+.clearfix{height:0;clear:both;}
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom:1; }
+/*浮动*/
+.fl{float:left;}
+.fr{float:right;}
+.fn{float:none;}
+/*内容位置*/
+.tal{text-align:left;}
+.tac{text-align:center;}
+.tar{text-align:right;}
+
+
+
+
+
+.content{width: 100%; height: 100%; min-height: 3.86rem; background: url(./img/bg.jpg) no-repeat; background-size:100% auto; background-color: #ff4945;}
+.tip{width: 100%; padding-top: 0.18rem; font-size:0.11rem; text-align: center;}
+.download{width: 100%;  position: fixed; bottom: 0px; left: 0; padding-bottom: 0.10rem;}
+.phone{ width: 99%; margin: 0 1%; }
+.download-phone{width: 33%; text-align: center;}
+.download-phone img{width: 90%; margin-right: 0.10rem;}
+
+</style>
+        
+	</head>
+	<body>
+		<div class="content">
+			 <div class="tip" >如遇下载困难，请点击屏幕右上方按钮，选择浏览器打开下载。</div>
+		</div>
+		<footer class="download">
+			<div class="phone">
+				<a href="http://www.generalpinyin.com/gp.apk" class="download-phone fl"><img src="./img/android.png" /></a>
+				<a href="https://itunes.apple.com/us/app/kan-pin-yin-shuo-wai-yu/id1017207505?l=zh&ls=1&mt=8" class="download-phone fl"><img src="./img/iphone.png" /></a>
+				<a href="http://www.generalpinyin.com" class="download-phone  fr"><img src="./img/text.png" /></a>
+				<br class="clearfix" />
+			</div>
+		</footer>
+	</body>
+</html>
